@@ -84,11 +84,11 @@ const ListTodo = () => {
                                     onChange={(e) => setState({ value: e.target.value })}
                                     required
                                 />
-                                <button type="submit">Save</button>
+                                <button className='btn btn-primary' type="submit">Save</button>
                             </form>
                         ) : (
                             <label className="form-check-label text-primary"
-                                style={item.completed ? { textDecoration: "line-through" } : null}>
+                                style={item.completed ? { textDecoration: "line-through" } : undefined}>
                                 <input
                                     className="form-check-input"
                                     type="checkbox"
