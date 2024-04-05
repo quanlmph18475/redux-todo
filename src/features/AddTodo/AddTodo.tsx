@@ -1,4 +1,4 @@
-import  { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { addTodo } from '../../app/todoSlice';
 import { useAppDispatch } from '../../hook';
 
@@ -19,7 +19,7 @@ const AddTodo = () => {
         if (state.value.trim() !== '') {
             const newTodo = {
                 id: Date.now(),
-                text: state.value, 
+                text: state.value,
                 completed: false,
             };
             dispatch(addTodo(newTodo));
@@ -43,11 +43,11 @@ const AddTodo = () => {
                         name="name"
                         value={state.value}
                         onChange={(event) => setState({ value: event.target.value })}
-                        className="py-2 px-5 border border-warning text-primary text-center"
+                        className="py-2 px-5 m-2 border border-warning text-primary text-center"
                     />
                     <button
                         type="submit"
-                        className="btn btn-primary border border-primary justify-content-end py-2 px-3 opacity-75 text-light"
+                        className="btn btn-primary border border-primary justify-content-end py-2 px-3  opacity-75 text-light"
                     >
                         +
                     </button>

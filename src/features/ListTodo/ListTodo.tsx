@@ -90,7 +90,7 @@ const ListTodo = () => {
                             <label className="form-check-label text-primary"
                                 style={item.completed ? { textDecoration: "line-through" } : undefined}>
                                 <input
-                                    className="form-check-input"
+                                    className="form-check-input p-2"
                                     type="checkbox"
                                     checked={item.completed}
                                     onChange={() => handleCheckboxChange(item.id)}
